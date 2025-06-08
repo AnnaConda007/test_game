@@ -1,0 +1,29 @@
+.nucleus {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.nucleus.disabled {
+  cursor: default;
+  color: #ef4444;
+}
+
+.nucleus.value-o {
+  color: #3b82f6;
+}
+
+.nucleus.highlight {
+  background-color: #facc15;
+  box-shadow: 0 0 10px #f59e0b inset;
+}
