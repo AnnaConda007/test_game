@@ -45,7 +45,9 @@ const GameField = () => {
   };
 
   const getGamerByFigure = (figure: CellValue) => {
-    return Object.entries(figures).find(([f]) => f === figure)?.[0] ?? null;
+    return (
+      Object.entries(figures).find(([, val]) => val === figure)?.[0] ?? null
+    );
   };
 
   const checkWinner = (Nucleuses: (CellValue | null)[]) => {
